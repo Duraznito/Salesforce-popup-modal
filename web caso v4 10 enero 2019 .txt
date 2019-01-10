@@ -1,0 +1,1443 @@
+<apex:page id="WebCaso" doctype="html-5.0" applyhtmltag="false" showheader="false" cache="false" controller="CONTROL_WebCaso">
+<apex:form id="F_WebCaso">
+
+    <div style="position: absolute;top: 0px;width: 100%;left: 0px;">
+        
+        <div>
+            <apex:image url="{!URLFOR($Resource.web_casos, 'header.jpg')}" style="width: 100%;display: block;"/>
+        </div>
+            
+   <style>
+        #fondo {
+         position:absolute;
+         text-align:center;
+         top:0px;
+         left:0px;
+         background-color: rgb(94, 75, 60);
+         opacity: 0.7;
+         visibility: visible;
+         height:100%;
+         width: 100%;
+        }
+         #fondo2 {
+         position:absolute;
+         text-align:center;
+         top:0px;
+         left:0px;
+         background-color: rgb(94, 75, 60);
+         opacity: 0.7;
+         visibility: visible;
+         height:100%;
+         width: 100%;
+        }
+        #caja2 {
+        z-index:3;
+        position:absolute;
+        background-color: rgb(010, 010, 010,0.01);
+        left:0px;
+        top:60px;
+        width: 100%;
+        }
+        #caja3 {
+        z-index:3;
+        position:absolute;
+        background-color: rgb(010, 010, 010,0.01);
+        left:0px;
+        top:60px;
+        width: 100%;
+        }
+        </style> 
+        
+
+             
+              <div id="caja3">
+              <center> 
+                 <img id="Image-Maps-Com-image-maps-2019-01-09-185149" src="http://www.image-maps.com/m/private/0/030udarl7lkn1nt9km8r7f1pn3_web-caso-banner-celulares.png" border="0" width="680" height="999" orgWidth="680" orgHeight="999" usemap="#image-maps-2019-01-09-185149" alt="" />
+                  <map name="image-maps-2019-01-09-185149" id="ImageMapsCom-image-maps-2019-01-09-185149">
+                  <area id="blank" alt="c" title="https://itunes.apple.com/mx/app/vialli-app/id1412329134?mt=8" href="https://itunes.apple.com/mx/app/vialli-app/id1412329134?mt=8" shape="rect" coords="100,890,340,977" style="outline:none;" target="_self"     />
+                  <area id="blank" alt="v" title="https://play.google.com/store/apps/details?id=obm.cloudmobile.vialliapp" href="https://play.google.com/store/apps/details?id=obm.cloudmobile.vialliapp" shape="rect" coords="355,889,612,976" style="outline:none;" target="_self"     />
+                  <area shape="rect" coords="678,997,680,999" alt="Image Map" style="outline:none;" title="Image Map" href="http://www.image-maps.com/index.php?aff=mapped_users_0" />
+                  </map>
+               </center>
+             </div>
+              
+             <div id="fondo"> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br>                
+                              <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br>
+                              <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br>
+                              <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br>
+                              <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br>
+                              
+                 <font onclick="ocultar()" color="white">Continuar aquí</font>
+             </div>
+  
+  
+    
+              <div id="caja2">
+              <center> 
+              <img id="Image-Maps-Com-image-maps-2019-01-09-193302" src="http://www.image-maps.com/m/private/0/030udarl7lkn1nt9km8r7f1pn3_web-caso-banner-laptop2.png" border="0" width="999" height="528" orgWidth="999" orgHeight="528" usemap="#image-maps-2019-01-09-193302" alt="" />
+              <map name="image-maps-2019-01-09-193302" id="ImageMapsCom-image-maps-2019-01-09-193302">
+              <area id="blank" alt="c" title="https://itunes.apple.com/mx/app/vialli-app/id1412329134?mt=8" href="https://itunes.apple.com/mx/app/vialli-app/id1412329134?mt=8" shape="rect" coords="22,443,224,510" style="outline:none;" target="_self"     />
+              <area id="blank" alt="v" title="https://play.google.com/store/apps/details?id=obm.cloudmobile.vialliapp" href="https://play.google.com/store/apps/details?id=obm.cloudmobile.vialliapp" shape="rect" coords="238,442,451,513" style="outline:none;" target="_self"     />
+              <area shape="rect" coords="997,526,999,528" alt="Image Map" style="outline:none;" title="Image Map" href="http://www.image-maps.com/index.php?aff=mapped_users_0" />
+              </map>           
+              </center>
+             </div>
+              
+             <div id="fondo2"> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br>                
+                              <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br>
+                              <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br>
+                 <font onclick="ocultar()" color="white">Continuar aquí</font>
+             </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+             <script> 
+               function ocultar()
+               {
+               document.getElementById('fondo').style.display = 'none';
+               document.getElementById('caja2').style.display = 'none';
+                document.getElementById('fondo2').style.display = 'none';
+               document.getElementById('caja3').style.display = 'none';
+               }
+             </script>
+             
+             
+             
+             <style type="text/css">
+               @media screen and (min-width: 1000px) {
+               div#caja3 { display: none }
+               div#fondo { display: none }
+               }
+               @media screen and (max-width: 1000px) {
+               div#caja2 { display: none }
+               div#fondo2 { display: none }
+               }
+             </style>
+         
+        
+        <apex:outputPanel id="OP_SeccionInicial">
+            <apex:outputPanel id="OP_SubSeccionInicial" rendered="{!AND(seccionInicial == true,seccionSiguiente == false)}">
+                <div style="width: 100%;background-color:#F0EEE6;">
+                    
+                    <div style="width: 47.5%;background-color:#FFFFFF;margin: 0 auto;border-left:solid 1px #D8D8D8;border-right:solid 1px #D8D8D8;">
+                        
+                        <table cellspacing="0" cellpadding="0" style="width:95%;margin: 0 auto;font-family: Helvetica, sans-serif;font-size: 1vw;text-align: justify;">
+                            <tr>
+                                <td><apex:messages style="color:red; font-weight:bold;"/></td>
+                            </tr>
+                            <tr><td>&nbsp;</td></tr>
+                            <tr>
+                                <td>
+                                    Bienvenidos a nuestro sistema de postventa para poder levantar un ticket de atención. Le pedimos llenar el siguiente cuestionario para poder atenderle a la brevedad. Nuestro tiempo estimado para contactarlo y acordar la visita de validación es de 2 a 3 días hábiles a partir de la recepción del folio°.
+                                </td>
+                            </tr>
+                            <tr><td>&nbsp;</td></tr>
+                            <tr>
+                                <td>
+                                    IMPORTANTE: Si usted ya llenó este formulario para una garantía específica, no vuelva a llenarlo. En este caso por favor contacte al departamento de postventa para darle seguimiento a su solicitud.
+                                </td>
+                            </tr>
+                        </table>
+                        
+                        <table cellspacing="0" cellpadding="0" style="width:95%;margin: 0 auto;font-family: Helvetica, sans-serif;">
+                            <tr><td>&nbsp;</td></tr>
+                            <tr><td>&nbsp;</td></tr>
+                            <tr id="etiquetaNombre">
+                                <td style="font-size: 1.3vw;">
+                                    Nombre completo<label style="color:#DF0101;"> * </label>
+                                </td>
+                            </tr>
+                            <tr id="campoNombre">
+                                <td style="width:100%;">
+                                    <apex:inputField id="nombre" value="{!caso.SuppliedName}" style="width:50%;font-size: 0.9vw;"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width:100%;">
+                                    <div id="errorNombre" style="display: none;font-size: 0.8vw;color: #DF0101;"><apex:outputText value="Campo obligatorio"/></div>                         
+                                </td>
+                            </tr>
+                            <tr><td>&nbsp;</td></tr>
+                            <tr><td>&nbsp;</td></tr>
+                            <tr id="etiquetaNumeroCliente">
+                                <td style="font-size: 1.3vw;">
+                                    Número de cliente (EK)<label style="color:#DF0101;"> * </label>
+                                    <apex:actionStatus id="statusNumeroCliente" >
+                                        <apex:facet name="start" >
+                                            <apex:image url="/img/loading32.gif" width="15px" height="15px"/>
+                                        </apex:facet>
+                                    </apex:actionStatus>
+                                </td>
+                            </tr>
+                            <tr id="etiquetaInformacionNumeroCliente">
+                                <td style="font-size: 0.9vw;">
+                                    Este es su número de cliente con el cual lo podemos identificar. Este lo encuentra en cualquier recibo o estado de cuenta que haya 
+                                    recibido durante el proceso de compra. Si no lo conoce favor de llamar al tel. (442) 161-2046, de lunes a viernes de 9:00 a 14:00 hrs. 
+                                    y de 16:00 a 18:30 hrs., o enviar un correo electrónico a postventa@vialli.mx y con gusto se lo proporcionaremos.
+                                </td>
+                            </tr>
+                            <tr id="campoNumeroCliente">
+                                <td style="width:100%;">
+                                    <apex:inputField id="numeroCliente" value="{!caso.Numero_cliente__c}" style="width:50%;font-size: 0.9vw;">
+                                        <apex:actionSupport event="onchange" action="{!obtenerInformacionPropiedad}" status="statusNumeroCliente" reRender="OP_NumeroCliente,OP_InformacionPropiedad"/>
+                                    </apex:inputField>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width:100%;">
+                                    <div id="errorNumeroClienteVacio" style="display: none;font-size: 0.8vw;color: #DF0101;"><apex:outputText value="Campo obligatorio"/></div>                         
+                                </td>
+                            </tr>                                                                           
+                            <tr>        
+                                <td style="width:100%;">
+                                    <apex:outputPanel id="OP_NumeroCliente">
+                                        <apex:outputPanel id="OP_NumeroClienteSub" rendered="{!AND(ISBLANK(caso.Numero_cliente__c) == false,ISNULL(caso.Numero_cliente__c) == false,existeNumeroCliente == false)}">
+                                            <div id="errorNumeroClienteExistente" style="font-size: 0.8vw;color: #DF0101;"><apex:outputText value="El número de cliente ingresado no existe en el sistema"/></div>
+                                        </apex:outputPanel>
+                                    </apex:outputPanel>     
+                                </td>                                                                   
+                            </tr>                                   
+                            <tr><td>&nbsp;</td></tr>
+                            <tr><td>&nbsp;</td></tr>                            
+                            <tr id="etiquetaEmail">
+                                <td style="font-size: 1.3vw;">
+                                    Correo electrónico<label style="color:#DF0101;"> * </label>
+                                    <apex:actionStatus id="statusEmail" >
+                                        <apex:facet name="start" >
+                                            <apex:image url="/img/loading32.gif" width="15px" height="15px"/>
+                                        </apex:facet>
+                                    </apex:actionStatus>
+                                </td>
+                            </tr>
+                            <tr id="campoEmail">
+                                <td style="width:100%;">
+                                    <apex:inputField id="email" value="{!caso.SuppliedEmail}" style="width:50%;font-size: 0.9vw;" onblur="compruebaEmailIgual();"/>
+                                        <!-- apex:actionSupport event="onchange" action="{!obtenerGarantias}" status="statusEmail" reRender="OP_TieneGarantias,OP_NoTieneGarantias,OP_CasaNoVendida,OP_GarantiasNoVisibles"/>
+                                    </apex:inputField-->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width:100%;">
+                                    <div id="errorEmailVacio" style="display: none;font-size: 0.8vw;color: #DF0101;"><apex:outputText value="Campo obligatorio con formato válido"/></div>                          
+                                </td>
+                            </tr>                   
+                            <tr>
+                                <td style="width:100%;">
+                                    <div id="errorEmailNoExistente" style="display: none;font-size: 0.8vw;color: #DF0101;"><apex:outputText value="El correo electrónico ingresado no existe en el sistema, para la corrección de éste u otros datos personales por favor póngase en contacto con nosotros"/></div>
+                                </td>                       
+                            </tr>                       
+                            <tr><td>&nbsp;</td></tr>
+                            <tr><td>&nbsp;</td></tr>
+                            <tr id="etiquetaEmailComprobacion">
+                                <td style="font-size: 1.3vw;">
+                                    Correo electrónico (comprobación)<label style="color:#DF0101;"> * </label>
+                                </td>
+                            </tr>
+                            <tr id="subEtiquetaEmailComprobacion">
+                                <td style="font-size: 0.8vw;">
+                                    Favor de volver a capturar su correo electrónico
+                                </td>
+                            </tr>
+                            <tr id="campoEmailComprobacion">
+                                <td style="width:100%;">
+                                    <apex:inputText id="emailComprobacion" value="{!emailComprobacion}" style="width:50%;font-size: 0.9vw;" onblur="compruebaEmailIgual();"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width:100%;">
+                                    <div id="errorEmailComprobacionNoIguales" style="display: none;font-size: 0.8vw;color: #DF0101;">No concuerdan los dos correos electrónicos ingresados</div>                            
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width:100%;">
+                                    <div id="errorEmailComprobacionVacio" style="display: none;font-size: 0.8vw;color: #DF0101;">Campo obligatorio con formato válido</div>                         
+                                </td>
+                            </tr>
+                            <tr><td>&nbsp;</td></tr>
+                            <tr><td>&nbsp;</td></tr>
+                            <tr id="etiquetaTelefonoCasa">
+                                <td style="font-size: 1.3vw;">
+                                    Teléfono de casa
+                                </td>
+                            </tr>
+                            <tr id="subEtiquetaTelefonoCasa">
+                                <td style="font-size: 0.8vw;">
+                                    Favor de incluir los 10 dígitos ej. 4421612046
+                                </td>
+                            </tr>
+                            <tr id="campoTelefonoCasa">
+                                <td style="width:100%;">
+                                    <apex:inputField id="telefonoCasa" value="{!caso.SuppliedPhone}" style="width:50%;font-size: 0.9vw;"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width:100%;">
+                                    <div id="errorTelefonoCasa" style="display: none;font-size: 0.8vw;color: #DF0101;">Formato inválido</div>                           
+                                </td>
+                            </tr>
+                            <tr><td>&nbsp;</td></tr>
+                            <tr><td>&nbsp;</td></tr>
+                            <tr id="etiquetaTelefonoOficina">
+                                <td style="font-size: 1.3vw;">
+                                    Teléfono de oficina
+                                </td>
+                            </tr>
+                            <tr id="subEtiquetaTelefonoOficina">
+                                <td style="font-size: 0.8vw;">
+                                    Favor de incluir los 10 dígitos ej. 4421612046
+                                </td>
+                            </tr>
+                            <tr id="campoTelefonoOficina">
+                                <td style="width:100%;">
+                                    <apex:inputField id="telefonoOficina" value="{!caso.Telefono_oficina_contacto__c}" style="width:50%;font-size: 0.9vw;"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width:100%;">
+                                    <div id="errorTelefonoOficina" style="display: none;font-size: 0.8vw;color: #DF0101;">Formato inválido</div>                            
+                                </td>
+                            </tr>
+                            <tr><td>&nbsp;</td></tr>
+                            <tr><td>&nbsp;</td></tr>
+                            <tr id="etiquetaTelefonoCelular">
+                                <td style="font-size: 1.3vw;">
+                                    Teléfono celular
+                                </td>
+                            </tr>
+                            <tr id="subEtiquetaTelefonoCelular">
+                                <td style="font-size: 0.8vw;">
+                                    Favor de incluir los 10 dígitos ej. 4421612046
+                                </td>
+                            </tr>
+                            <tr id="campoTelefonoCelular">
+                                <td style="width:100%;">
+                                    <apex:inputField id="telefonoCelular"  value="{!caso.Telefono_celular_contacto__c}" style="width:50%;font-size: 0.9vw;"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width:100%;">
+                                    <div id="errorTelefonoCelular" style="display: none;font-size: 0.8vw;color: #DF0101;">Formato inválido</div>                            
+                                </td>
+                            </tr>
+                            <tr><td>&nbsp;</td></tr>
+                            <tr><td>&nbsp;</td></tr>
+                            <tr id="etiquetaMetodoContactoPreferido">
+                                <td style="font-size: 1.3vw;">
+                                    Método de contacto preferido<label style="color:#DF0101;"> * </label>
+                                </td>
+                            </tr>
+                            <tr id="campoMetodoContactoPreferido">
+                                <td style="width:100%;">
+                                    <apex:selectList id="metodoContactoPreferido" value="{!caso.Metodo_contacto_preferido__c}" size="1" multiselect="false" style="width:50%;font-size: 0.9vw;">
+                                        <apex:selectOptions value="{!metodosContacto}"/>
+                                    </apex:selectList>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width:100%;">
+                                    <div id="errorMetodoContactoPreferido" style="display: none;font-size: 0.8vw;color: #DF0101;">Campo obligatorio</div>                           
+                                </td>
+                            </tr>                               
+                        </table>
+                        
+                        <apex:outputPanel id="OP_InformacionPropiedad">
+                            <apex:outputPanel id="OP_InformacionPropiedadSub"  rendered="{!existeNumeroCliente == true}">
+                                <table cellspacing="0" cellpadding="0" style="width:95%;margin: 0 auto;font-family: Helvetica, sans-serif;">
+                                    <tr><td>&nbsp;</td></tr>
+                                    <tr><td>&nbsp;</td></tr>
+                                    <tr>
+                                        <td>
+                                            <table cellspacing="0" cellpadding="0" style="width:95%;margin: 0 auto;font-family: Helvetica, sans-serif;border:solid 1px #594F2B;">
+                                            <tr><td>&nbsp;</td></tr>
+                                            <tr>
+                                                <td colspan="2" style="font-size: 1.3vw;color: #594F2B;font-weight: bold;text-align: center;">
+                                                    Información de la propiedad
+                                                </td>
+                                            </tr>
+                                            <tr><td>&nbsp;</td></tr>
+                                            <tr>
+                                                <td style="font-size: 1vw;color: #594F2B;padding-left:3vw;font-weight: bold;width: 30%;">
+                                                    Desarrollo:
+                                                </td>
+                                                <td style="font-size: 0.9vw;color: #594F2B;font-weight: bold;width: 70%;">
+                                                    <apex:outputText value="{!casa.Product2.Desarrollo__r.Name}"/>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-size: 1vw;color: #594F2B;padding-left:3vw;font-weight: bold;width: 30%;">
+                                                    Casa:
+                                                </td>
+                                                <td style="font-size: 0.9vw;color: #594F2B;font-weight: bold;width: 70%;">
+                                                    <apex:outputText value="{!casa.Product2.Name}"/>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-size: 1vw;color: #594F2B;padding-left:3vw;font-weight: bold;width: 30%;">
+                                                    Fecha de entrega:
+                                                </td>
+                                                <td style="font-size: 0.9;color: #594F2B;font-weight: bold;width: 70%;">
+                                                    <apex:outputText id="fechaEntrega" value="{0, date, dd '-' MM '-' yyyy}">
+                                                        <apex:param value="{!casa.Product2.Fecha_Entrega_de_casa__c}"/> 
+                                                    </apex:outputText>  
+                                                </td>
+                                            </tr>
+                                            <tr><td>&nbsp;</td></tr>
+                                            <tr>
+                                                <td colspan="2" style="font-size: 1vw;color: #594F2B;padding-left:3vw;font-weight: bold;">
+                                                    Garantías vigentes
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" style="font-size: 0.9vw;color: #594F2B;">
+                                                    <ul>
+                                                        <apex:repeat id="repeatGarantiasVigentes" value="{!garantiasVigentes}" var="gv">
+                                                            <li><apex:outputText value="{!gv.Categoria__c}"/></li>
+                                                        </apex:repeat>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr><td>&nbsp;</td></tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </apex:outputPanel>
+                        </apex:outputPanel>
+                        
+                        
+                        <!-- apex:outputPanel id="OP_Desarrollos">
+                            <table cellspacing="0" cellpadding="0" style="width:95%;margin: 0 auto;font-family: Helvetica, sans-serif;">
+                                <tr><td>&nbsp;</td></tr>
+                                <tr><td>&nbsp;</td></tr>
+                                <tr id="etiquetaDesarrollo">
+                                    <td style="font-size: 1.3vw;">
+                                        Desarrollo<label style="color:#DF0101;"> * </label>
+                                        <apex:actionStatus id="statusDesarrollo" >
+                                            <apex:facet name="start" >
+                                                <apex:image url="/img/loading32.gif" width="15px" height="15px"/>
+                                            </apex:facet>
+                                        </apex:actionStatus>
+                                    </td>
+                                </tr>
+                                <tr id="campoDesarrollo">
+                                    <td style="width:100%;">
+                                    <apex:actionRegion >
+                                        <apex:selectList id="desarrollo" value="{!caso.Desarrollo__c}" size="1" multiselect="false" style="width:50%;font-size: 0.9vw;">
+                                            <apex:actionSupport event="onchange" action="{!obtenerCasas}" status="statusDesarrollo" reRender="OP_Casas"/>
+                                            <apex:selectOptions value="{!desarrollos}"/>
+                                        </apex:selectList>
+                                        </apex:actionRegion>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width:100%;">
+                                        <div id="errorDesarrollo" style="display: none;font-size: 0.8vw;color: #DF0101;">Campo obligatorio</div>                            
+                                    </td>
+                                </tr>
+                                <tr><td>&nbsp;</td></tr>
+                                <tr><td>&nbsp;</td></tr>
+                                <tr id="etiquetaCasa">
+                                    <td style="font-size: 1.3vw;">
+                                        Casa<label style="color:#DF0101;"> * </label>
+                                        <apex:actionStatus id="statusCasa" >
+                                            <apex:facet name="start" >
+                                                <apex:image url="/img/loading32.gif" width="15px" height="15px"/>
+                                            </apex:facet>
+                                        </apex:actionStatus>
+                                    </td>
+                                </tr>
+                                <tr id="campoCasa">
+                                    <td style="width:100%;">
+                                        <apex:outputPanel id="OP_Casas">
+                                            <apex:actionRegion >
+                                            <apex:selectList id="casa" value="{!caso.Casa__c}" size="1" multiselect="false" style="width:50%;font-size: 0.9vw;">
+                                                <apex:actionSupport event="onchange" action="{!obtenerGarantias}" status="statusCasa" reRender="OP_TieneGarantias,OP_NoTieneGarantias,OP_CasaNoVendida,OP_GarantiasNoVisibles,OP_FechaEntregaVivienda"/>
+                                                <apex:selectOptions value="{!casas}"/>
+                                            </apex:selectList>
+                                            </apex:actionRegion>
+                                        </apex:outputPanel>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width:100%;">
+                                        <div id="errorCasa" style="display: none;font-size: 0.8vw;color: #DF0101;">Campo obligatorio</div>                          
+                                    </td>
+                                </tr>
+                            </table>
+                        </apex:outputPanel-->                       
+                        
+                        <!-- apex:outputPanel id="OP_TieneGarantias">
+                            <apex:outputPanel id="OP_TieneGarantiasSub" rendered="{!AND(emailIngresado == true,casaElegida == true,correspondeEmailCasa == true,casaVendida == true,tieneGarantias == true)}">
+                                <table cellspacing="0" cellpadding="0" style="width:95%;margin: 0 auto;font-family: Helvetica, sans-serif;">
+                                    <tr><td>&nbsp;</td></tr>
+                                    <tr><td>&nbsp;</td></tr>
+                                    <tr>
+                                        <td>
+                                            <table cellspacing="0" cellpadding="0" style="width:95%;margin: 0 auto;font-family: Helvetica, sans-serif;border:solid 1px #594F2B;">
+                                            <tr><td>&nbsp;</td></tr>
+                                            <tr>
+                                                <td style="font-size: 1vw;color: #594F2B;padding-left:3vw;font-weight: bold;">
+                                                    Garantías vigentes de la propiedad:
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-size: 0.9vw;color: #594F2B;">
+                                                    <ul>
+                                                        <apex:repeat id="repeatGarantiasVigentes" value="{!garantiasVigentes}" var="gv">
+                                                            <li><apex:outputText value="{!gv.Categoria__c}"/></li>
+                                                        </apex:repeat>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr><td>&nbsp;</td></tr>                    
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </apex:outputPanel>
+                        </apex:outputPanel-->
+                        
+                        <!-- apex:outputPanel id="OP_NoTieneGarantias">
+                            <apex:outputPanel id="OP_NoTieneGarantiasSub" rendered="{!AND(emailIngresado == true,casaElegida == true,correspondeEmailCasa == true,casaVendida == true,tieneGarantias == false)}">
+                                <table cellspacing="0" cellpadding="0" style="width:95%;margin: 0 auto;font-family: Helvetica, sans-serif;">
+                                    <tr><td>&nbsp;</td></tr>
+                                    <tr><td>&nbsp;</td></tr>
+                                    <tr>
+                                        <td>
+                                            <table cellspacing="0" cellpadding="0" style="width:95%;margin: 0 auto;font-family: Helvetica, sans-serif;border:solid 1px #594F2B;">
+                                            <tr><td>&nbsp;</td></tr>
+                                            <tr>
+                                                <td style="font-size: 1vw;color: #594F2B;padding-left:3vw;font-weight: bold;">
+                                                    Garantías vigentes de la propiedad:
+                                                </td>
+                                            </tr>
+                                            <tr><td>&nbsp;</td></tr>
+                                            <tr>
+                                                <td style="font-size: 0.9vw;color: #594F2B;padding-left:3vw;">
+                                                    La propiedad no cuenta con alguna garantía vigente.
+                                                </td>
+                                            </tr>
+                                            <tr><td>&nbsp;</td></tr>                
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </apex:outputPanel>
+                        </apex:outputPanel-->
+                        
+                        <!-- apex:outputPanel id="OP_CasaNoVendida">
+                            <apex:outputPanel id="OP_CasaNoVendidaSub" rendered="{!AND(emailIngresado == true,casaElegida == true,correspondeEmailCasa == true,casaVendida == false)}">
+                                <table cellspacing="0" cellpadding="0" style="width:95%;margin: 0 auto;font-family: Helvetica, sans-serif;">
+                                    <tr><td>&nbsp;</td></tr>
+                                    <tr><td>&nbsp;</td></tr>
+                                    <tr>
+                                        <td>
+                                            <table cellspacing="0" cellpadding="0" style="width:95%;margin: 0 auto;font-family: Helvetica, sans-serif;border:solid 1px #594F2B;">
+                                            <tr><td>&nbsp;</td></tr>
+                                            <tr>
+                                                <td style="font-size: 1vw;color: #594F2B;padding-left:3vw;font-weight: bold;">
+                                                    Garantías vigentes de la propiedad:
+                                                </td>
+                                            </tr>
+                                            <tr><td>&nbsp;</td></tr>
+                                            <tr>
+                                                <td style="font-size: 0.9vw;color: #594F2B;padding-left: 3vw;padding-right: 3vw;text-align: justify;">
+                                                    Aunque el correo electrónico ingresado coincide con el registrado en el sistema y con la propiedad seleccionada la propiedad aún no ha está vendida.
+                                                </td>
+                                            </tr>
+                                            <tr><td>&nbsp;</td></tr>                
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </apex:outputPanel>
+                        </apex:outputPanel--->
+                        
+                        <!-- apex:outputPanel id="OP_GarantiasNoVisibles">
+                            <apex:outputPanel id="OP_GarantiasNoVisiblesSub" rendered="{!AND(emailIngresado == true,casaElegida == true,correspondeEmailCasa == false)}">
+                                <table cellspacing="0" cellpadding="0" style="width:95%;margin: 0 auto;font-family: Helvetica, sans-serif;">
+                                    <tr><td>&nbsp;</td></tr>
+                                    <tr><td>&nbsp;</td></tr>
+                                    <tr>
+                                        <td>
+                                            <table cellspacing="0" cellpadding="0" style="width:95%;margin: 0 auto;font-family: Helvetica, sans-serif;border:solid 1px #594F2B;">
+                                            <tr><td>&nbsp;</td></tr>
+                                            <tr>
+                                                <td style="font-size: 1vw;color: #594F2B;padding-left:3vw;font-weight: bold;">
+                                                    Garantías vigentes de la propiedad:
+                                                </td>
+                                            </tr>
+                                            <tr><td>&nbsp;</td></tr>
+                                            <tr>
+                                                <td style="font-size: 0.9vw;color: #594F2B;padding-left: 3vw;padding-right: 3vw;text-align: justify;">
+                                                    Para visualizar las garantías de la propiedad debe coincidir el correo electrónico registrado con la propiedad seleccionada.
+                                                    <apex:outputText value=" El correo electrónico ingresado no existe en el sistema, si desea actualizar sus datos personales por favor póngase en contacto directamente con nosotros." rendered="{!emailExistente == false}"/>
+                                                </td>
+                                            </tr>
+                                            <tr><td>&nbsp;</td></tr>                
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </apex:outputPanel>
+                        </apex:outputPanel-->                       
+                        
+                        <!-- apex:outputPanel id="OP_FechaEntregaVivienda">
+                            <apex:outputPanel id="OP_FechaEntregaViviendaSub" rendered="{!AND(emailIngresado == true,casaElegida == true,correspondeEmailCasa == true,casaVendida == true)}">
+                                <table cellspacing="0" cellpadding="0" style="width:95%;margin: 0 auto;font-family: Helvetica, sans-serif;">
+                                    <tr><td>&nbsp;</td></tr>
+                                    <tr><td>&nbsp;</td></tr>
+                                    <tr>
+                                        <td>
+                                            <table cellspacing="0" cellpadding="0" style="width:95%;margin: 0 auto;font-family: Helvetica, sans-serif;border:solid 1px #594F2B;">
+                                            <tr><td>&nbsp;</td></tr>
+                                            <tr>
+                                                <td style="font-size: 1vw;color: #594F2B;padding-left:3vw;font-weight: bold;">
+                                                    Fecha de entrega de vivienda
+                                                </td>
+                                            </tr>
+                                            <tr><td>&nbsp;</td></tr>
+                                            <tr>
+                                                <td style="font-size: 0.9vw;color: #594F2B;padding-left: 3vw;padding-right: 3vw;text-align: justify;">
+                                                    <apex:outputText id="fechaEntregaVivienda" value="{0, date, dd '-' MM '-' yyyy}" style="width:25%;font-size: 0.9vw;">
+                                                        <apex:param value="{!productoOportunidad.PriceBookEntry.Product2.Fecha_Entrega_de_casa__c}" /> 
+                                                    </apex:outputText>                                                  
+                                                </td>
+                                            </tr>
+                                            <tr><td>&nbsp;</td></tr>                
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </apex:outputPanel>
+                        </apex:outputPanel-->
+                        
+                        <table cellspacing="0" cellpadding="0" style="width:95%;margin: 0 auto;font-family: Helvetica, sans-serif;">
+                            <tr><td>&nbsp;</td></tr>
+                            <tr><td>&nbsp;</td></tr>
+                            <tr id="etiquetaCategoriaReporte">
+                                <td colspan="3" style="font-size: 1.3vw;">
+                                    Categoría de reporte<label style="color:#DF0101;"> * </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" style="width:100%;">
+                                    <div id="errorCategoriaReporte" style="display: none;font-size: 0.8vw;color: #DF0101;">Campo obligatorio</div>                          
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width:47%;">
+                                    <apex:image url="{!URLFOR($Resource.web_casos, 'acabados_exteriores.jpg')}" style="width: 100%;display: block;border: solid 2px #5A4F2B;box-sizing: border-box;"/>
+                                </td>
+                                <td style="width:6%;">&nbsp;</td>
+                                <td style="width:47%;">
+                                    <apex:image url="{!URLFOR($Resource.web_casos, 'humedades_puertas_ventanas.jpg')}" style="width: 100%;display: block;border: solid 2px #5A4F2B;box-sizing: border-box;"/>
+                                </td>
+                            </tr>                   
+                            <tr>
+                                <td style="width:47%;">
+                                    <apex:inputCheckbox id="acabados" value="{!acabados}"/><apex:outputText value="Acabados" style="font-size: 1.1vw;"/>
+                                </td>
+                                <td style="width:6%;">&nbsp;</td>
+                                <td style="width:47%;">
+                                    <apex:inputCheckbox id="canceles" value="{!canceles}"/><apex:outputText value="Canceles" style="font-size: 1.1vw;"/>
+                                </td>
+                            </tr>
+                            <tr><td>&nbsp;</td></tr>
+                            <tr>
+                                <td style="width:47%;">
+                                    <apex:image url="{!URLFOR($Resource.web_casos, 'carpinteria.jpg')}" style="width: 100%;display: block;border: solid 2px #5A4F2B;box-sizing: border-box;"/>
+                                </td>
+                                <td style="width:6%;">&nbsp;</td>
+                                <td style="width:47%;">
+                                    <apex:image url="{!URLFOR($Resource.web_casos, 'humedades_techos_impermeabilizante.jpg')}" style="width: 100%;display: block;border: solid 2px #5A4F2B;box-sizing: border-box;"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width:47%;">
+                                    <apex:inputCheckbox id="carpinteria" value="{!carpinteria}"/><apex:outputText value="Carpintería" style="font-size: 1.1vw;"/>
+                                </td>
+                                <td style="width:6%;">&nbsp;</td>
+                                <td style="width:47%;">
+                                    <apex:inputCheckbox id="humedades" value="{!humedades}"/><apex:outputText value="Humedades" style="font-size: 1.1vw;"/>
+                                </td>
+                            </tr>
+                            <tr><td>&nbsp;</td></tr>
+                            <tr>
+                                <td style="width:47%;">
+                                    <apex:image url="{!URLFOR($Resource.web_casos, 'instalaciones_gas.jpg')}" style="width: 100%;display: block;border: solid 2px #5A4F2B;box-sizing: border-box;"/>
+                                </td>
+                                <td style="width:6%;">&nbsp;</td>
+                                <td style="width:47%;">
+                                    <apex:image url="{!URLFOR($Resource.web_casos, 'instalaciones_electricas.jpg')}" style="width: 100%;display: block;border: solid 2px #5A4F2B;box-sizing: border-box;"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width:47%;">
+                                    <apex:inputCheckbox id="instalacionesGas" value="{!instalacionesGas}"/><apex:outputText value="Instalaciones de gas" style="font-size: 1.1vw;"/>
+                                </td>
+                                <td style="width:6%;">&nbsp;</td>
+                                <td style="width:47%;">
+                                    <apex:inputCheckbox id="instalacionesElectricas" value="{!instalacionesElectricas}"/><apex:outputText value="Instalaciones eléctricas" style="font-size: 1.1vw;"/>
+                                </td>
+                            </tr>
+                            <tr><td>&nbsp;</td></tr>
+                            <tr>
+                                <td style="width:47%;">
+                                    <apex:image url="{!URLFOR($Resource.web_casos, 'instalaciones_hidraulicas.jpg')}" style="width: 100%;display: block;border: solid 2px #5A4F2B;box-sizing: border-box;"/>
+                                </td>
+                                <td style="width:6%;">&nbsp;</td>
+                                <td style="width:47%;">
+                                    <apex:image url="{!URLFOR($Resource.web_casos, 'instalaciones_sanitarias.jpg')}" style="width: 100%;display: block;border: solid 2px #5A4F2B;box-sizing: border-box;"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width:47%;">
+                                    <apex:inputCheckbox id="instalacionesHidraulicas" value="{!instalacionesHidraulicas}"/><apex:outputText value="Instalaciones hidráulicas" style="font-size: 1.1vw;"/>
+                                </td>
+                                <td style="width:6%;">&nbsp;</td>
+                                <td style="width:47%;">
+                                    <apex:inputCheckbox id="instalacionesSanitarias" value="{!instalacionesSanitarias}"/><apex:outputText value="Instalaciones sanitarias" style="font-size: 1.1vw;"/>
+                                </td>
+                            </tr>
+                            <tr><td>&nbsp;</td></tr>
+                            <tr>
+                                <td style="width:47%;">
+                                    <apex:image url="{!URLFOR($Resource.web_casos, 'instalaciones_tv_telefonia.jpg')}" style="width: 100%;display: block;border: solid 2px #5A4F2B;box-sizing: border-box;"/>
+                                </td>
+                                <td style="width:6%;">&nbsp;</td>
+                                <td style="width:47%;">
+                                    <apex:image url="{!URLFOR($Resource.web_casos, 'jardineria.jpg')}" style="width: 100%;display: block;border: solid 2px #5A4F2B;box-sizing: border-box;"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width:47%;">
+                                    <apex:inputCheckbox id="instalacionesTvTelefonia" value="{!instalacionesTvTelefonia}"/><apex:outputText value="Instalaciones TV/TEL" style="font-size: 1.1vw;"/>
+                                </td>
+                                <td style="width:6%;">&nbsp;</td>
+                                <td style="width:47%;">
+                                    <apex:inputCheckbox id="jardineria" value="{!jardineria}"/><apex:outputText value="Jardinería" style="font-size: 1.1vw;"/>
+                                </td>
+                            </tr>
+                            <tr><td>&nbsp;</td></tr>
+                            <tr>
+                                <td style="width:47%;">
+                                    <apex:image url="{!URLFOR($Resource.web_casos, 'puerta_principal.jpg')}" style="width: 100%;display: block;border: solid 2px #5A4F2B;box-sizing: border-box;"/>
+                                </td>
+                                <td style="width:6%;">&nbsp;</td>
+                                <td style="width:47%;">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td style="width:47%;">
+                                    <apex:inputCheckbox id="puertaPrincipal" value="{!puertaPrincipal}"/><apex:outputText value="Puerta principal" style="font-size: 1.1vw;"/>
+                                </td>
+                                <td style="width:6%;">&nbsp;</td>
+                                <td style="width:47%;">&nbsp;</td>
+                            </tr>
+                            <!-- tr>
+                                <td style="width:47%;">
+                                    <apex:image url="{!URLFOR($Resource.web_casos, 'humedades_domos.jpg')}" style="width: 100%;display: block;border: solid 2px #5A4F2B;box-sizing: border-box;"/>
+                                </td>
+                                <td style="width:6%;">&nbsp;</td>
+                                <td style="width:47%;">
+                                    <apex:image url="{!URLFOR($Resource.web_casos, 'humedades_puertas_ventanas.jpg')}" style="width: 100%;display: block;border: solid 2px #5A4F2B;box-sizing: border-box;"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width:47%;">
+                                    <apex:inputCheckbox id="humedadesDomos" value="{!humedadesDomos}"/><apex:outputText value="Humedades en domos" style="font-size: 1.1vw;"/>
+                                </td>
+                                <td style="width:6%;">&nbsp;</td>
+                                <td style="width:47%;">
+                                    <apex:inputCheckbox id="humedadesPuertasVentanas" value="{!humedadesPuertasVentanas}"/><apex:outputText value="Humedades en puertas y ventanas" style="font-size: 1.1vw;"/>
+                                </td>
+                            </tr>
+                            <tr><td>&nbsp;</td></tr-->
+                            <!-- tr>
+                                <td style="width:47%;">
+                                    <apex:image url="{!URLFOR($Resource.web_casos, 'humedades_techos_impermeabilizante.jpg')}" style="width: 100%;display: block;border: solid 2px #5A4F2B;box-sizing: border-box;"/>
+                                </td>
+                                <td style="width:6%;">&nbsp;</td>
+                                <td style="width:47%;">
+                                    <apex:image url="{!URLFOR($Resource.web_casos, 'instalaciones_gas.jpg')}" style="width: 100%;display: block;border: solid 2px #5A4F2B;box-sizing: border-box;"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width:47%;">
+                                    <apex:inputCheckbox id="humedadesTechosImpermeabilizante" value="{!humedadesTechosImpermeabilizante}"/><apex:outputText value="Humedades en techos (impermeabilizante)" style="font-size: 1.1vw;"/>
+                                </td>
+                                <td style="width:6%;">&nbsp;</td>
+                                <td style="width:47%;">
+                                    <apex:inputCheckbox id="instalacionesGas" value="{!instalacionesGas}"/><apex:outputText value="Instalaciones de gas" style="font-size: 1.1vw;"/>
+                                </td>
+                            </tr>
+                            <tr><td>&nbsp;</td></tr-->
+                            <!-- tr>
+                                <td style="width:47%;">
+                                    <apex:image url="{!URLFOR($Resource.web_casos, 'instalaciones_electricas.jpg')}" style="width: 100%;display: block;border: solid 2px #5A4F2B;box-sizing: border-box;"/>
+                                </td>
+                                <td style="width:6%;">&nbsp;</td>
+                                <td style="width:47%;">
+                                    <apex:image url="{!URLFOR($Resource.web_casos, 'instalaciones_hidraulicas.jpg')}" style="width: 100%;display: block;border: solid 2px #5A4F2B;box-sizing: border-box;"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width:47%;">
+                                    <apex:inputCheckbox id="instalacionesElectricas" value="{!instalacionesElectricas}"/><apex:outputText value="Instalaciones eléctricas" style="font-size: 1.1vw;"/>
+                                </td>
+                                <td style="width:6%;">&nbsp;</td>
+                                <td style="width:47%;">
+                                    <apex:inputCheckbox id="instalacionesHidraulicas" value="{!instalacionesHidraulicas}"/><apex:outputText value="Instalaciones hidráulicas" style="font-size: 1.1vw;"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">&nbsp;</td>
+                            </tr-->
+                            <!-- tr>
+                                <td style="width:47%;">
+                                    <apex:image url="{!URLFOR($Resource.web_casos, 'instalaciones_sanitarias.jpg')}" style="width: 100%;display: block;border: solid 2px #5A4F2B;box-sizing: border-box;"/>
+                                </td>
+                                <td style="width:6%;">&nbsp;</td>
+                                <td style="width:47%;">
+                                    <apex:image url="{!URLFOR($Resource.web_casos, 'instalaciones_tv_telefonia.jpg')}" style="width: 100%;display: block;border: solid 2px #5A4F2B;box-sizing: border-box;"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width:47%;">
+                                    <apex:inputCheckbox id="instalacionesSanitarias" value="{!instalacionesSanitarias}"/><apex:outputText value="Instalaciones sanitarias" style="font-size: 1.1vw;"/>
+                                </td>
+                                <td style="width:6%;">&nbsp;</td>
+                                <td style="width:47%;">
+                                    <apex:inputCheckbox id="instalacionesTvTelefonia" value="{!instalacionesTvTelefonia}"/><apex:outputText value="Instalaciones TV y telefonía" style="font-size: 1.1vw;"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">&nbsp;</td>
+                            </tr-->
+                            <!-- tr>
+                                <td style="width:47%;">
+                                    <apex:image url="{!URLFOR($Resource.web_casos, 'jardineria.jpg')}" style="width: 100%;display: block;border: solid 2px #5A4F2B;box-sizing: border-box;"/>
+                                </td>
+                                <td style="width:6%;">&nbsp;</td>
+                                <td style="width:47%;">
+                                    <apex:image url="{!URLFOR($Resource.web_casos, 'ventanas_puertas_aluminio.jpg')}" style="width: 100%;display: block;border: solid 2px #5A4F2B;box-sizing: border-box;"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width:47%;">
+                                    <apex:inputCheckbox id="jardineria" value="{!jardineria}"/><apex:outputText value="Jardinería" style="font-size: 1.1vw;"/>
+                                </td>
+                                <td style="width:6%;">&nbsp;</td>
+                                <td style="width:47%;">
+                                    <apex:inputCheckbox id="ventanasPuertasAluminio" value="{!ventanasPuertasAluminio}"/><apex:outputText value="Ventanas y puertas de aluminio" style="font-size: 1.1vw;"/>
+                                </td>
+                            </tr-->
+                        </table>                        
+                        
+                        <table style="width:95%;margin: 0 auto;font-family: Helvetica, sans-serif;text-align: justify;">
+                            <tr><td>&nbsp;</td></tr>
+                            <tr><td>&nbsp;</td></tr>
+                            <tr>
+                                <td style="text-align:center;">
+                                    <!-- apex:commandButton id="enviarCaso" action="{!enviarCaso}" value="Enviar" style="border-radius: 8px;font-size:1.3vw;width: 10vw;height: 3vw;"/-->
+                                    <input id="siguiente" type="button" value="Siguiente" onclick="validaDatos();" style="border-radius: 8px;font-size:1.3vw;width: 10vw;height: 3vw;background-color: #4285F4;color: #FFFFFF;"/>                           
+                                </td>
+                            </tr>
+                            <tr><td>&nbsp;</td></tr>
+                            <tr><td>&nbsp;</td></tr>
+                        </table>
+                                         
+                    </div>
+                    
+                </div>
+            </apex:outputPanel>
+        </apex:outputPanel>
+        
+        <apex:outputPanel id="OP_SeccionSiguiente">
+            <apex:outputPanel id="OP_SubSeccionSiguiente" rendered="{!AND(seccionInicial == false,seccionSiguiente == true)}">
+                
+                <div style="width: 100%;background-color:#F0EEE6;">
+                    
+                    <div style="width: 47.5%;background-color:#FFFFFF;margin: 0 auto;border-left:solid 1px #D8D8D8;border-right:solid 1px #D8D8D8;">
+                    
+                        <table cellspacing="0" cellpadding="0" style="width:95%;margin: 0 auto;font-family: Helvetica, sans-serif;font-size: 1vw;text-align: justify;">
+                            <tr>
+                                <td><apex:messages style="color:red; font-weight:bold;"/></td>
+                            </tr>
+                            <tr><td>&nbsp;</td></tr>
+                            <tr>
+                                <td>
+                                    De cada una de las categorías que usted ha elegido, describa con el mayor detalle posible, cómo podemos atenderle por favor.
+                                </td>
+                            </tr>
+                        </table>
+                        
+                        <table cellspacing="0" cellpadding="0" style="width:95%;margin: 0 auto;font-family: Helvetica, sans-serif;">
+                            <tr><td>&nbsp;</td></tr>
+                            <tr><td>&nbsp;</td></tr>
+                            <apex:repeat value="{!casosWrapper}" var="cw">
+                                <tr>
+                                    <td style="width:100%; border-top:solid 1px #594F2B;" colspan="3">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td style="width:100%; font-size:1.3vw;" colspan="3">
+                                        <apex:outputText value="{!casosWrapper[cw].categoria}"/>
+                                    </td>
+                                </tr>
+                                <tr><td>&nbsp;</td></tr>
+                                <tr>
+                                    <td style="width:25%;">&nbsp;</td>
+                                    <td style="width:50%;">
+                                        <apex:variable var="imageVar" value="{!casosWrapper[cw].imagen}"/>
+                                        <apex:image url="{!URLFOR($Resource.web_casos, imageVar)}" style="width: 100%;display: block;border: solid 2px #5A4F2B;box-sizing: border-box;"/>
+                                    </td>
+                                    <td style="width:25%;">&nbsp;</td>
+                                </tr>
+                                <tr><td>&nbsp;</td></tr>
+                                <tr>
+                                    <td style="width:25%;">&nbsp;</td>
+                                    <td style="width:50%;font-size: 1.1vw;">
+                                        Solicitud de atención<label style="color:#DF0101;"> * </label>
+                                    </td>
+                                    <td style="width:25%;">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td style="width:25%;">&nbsp;</td>
+                                    <td style="width:50%;">
+                                        <apex:inputTextarea id="descripcion" value="{!casosWrapper[cw].descripcion}" rows="4" cols="46"/>
+                                    </td>
+                                    <td style="width:25%;">&nbsp;</td>
+                                </tr>
+                                <tr><td>&nbsp;</td></tr>
+                                <tr><td>&nbsp;</td></tr>
+                            </apex:repeat>
+                        </table>
+                        
+                        <!-- table cellspacing="0" cellpadding="0" style="width:95%;margin: 0 auto;font-family: Helvetica, sans-serif;">                            
+                            <tr id="etiquetaFechaHoraVisitasSugeridas">
+                                <td style="font-size: 1.3vw;">
+                                    Sugerencia de horario para visita de validación de garantía<label style="color:#DF0101;"> * </label>
+                                </td>
+                            </tr>
+                            <tr id="subEtiquetaFechaHoraVisitasSugeridas">
+                                <td style="font-size: 0.8vw;">
+                                    Favor de indicarnos día y hora sugerida para poder visitar su domicilio y valorar que su garantía sea válida y programar la reparación en caso de que proceda. NOTA: Esta fecha y hora sugerida está sujeta a confirmación por parte del departamento de postventa quien se comunicará para confirmar la visita.
+                                </td>
+                            </tr>
+                            <tr id="campoFechaHoraVisitasSugeridas">
+                                <td style="width:100%;">
+                                    <apex:inputField id="fechaHoraVisitasSugeridas" value="{!caso.Fecha_hora_visita_sugeridas__c}" style="width:50%;font-size: 0.9vw;"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width:100%;">
+                                    <div id="errorFechaHoraVisitasSugeridas" style="display: none;font-size: 0.8vw;color: #DF0101;">Campo obligatorio</div>                         
+                                </td>
+                            </tr>
+                            <tr><td>&nbsp;</td></tr>
+                            <tr><td>&nbsp;</td></tr>
+                        </table-->
+                        
+                        <table style="width:100%;margin: 0 auto;font-family: Helvetica, sans-serif;border-spacing: 0;">
+                            <tr>
+                                <td style="font-size: 1.3vw;padding-left: 0;">
+                                    <apex:image url="{!URLFOR($Resource.web_casos, 'condiciones.jpg')}" style="display: block;"/>
+                                </td>
+                            </tr>
+                        </table>
+                        
+                        <table style="width:95%;margin: 0 auto;font-family: Helvetica, sans-serif;text-align: justify;">
+                            <tr><td>&nbsp;</td></tr>
+                            <tr><td>&nbsp;</td></tr>
+                            <tr>
+                                <td style="font-size: 0.8vw;padding-left: 0;">
+                                    <p>1.- En caso de haber solicitado un servicio por este medio, no indica que su solicitud procederá y que se llevarán a cabo los trabajos necesarios para su reparación, ya que esto dependerá del dictamen técnico que emita nuestro personal especializado que acudirá a realizar la respectiva evaluación. En el caso de proceder y que su solicitud sea atendida se le solicitará que firme de conformidad que usted fue atendido, aún en el caso de no proceder se le solicitará que firme la evaluación que le presentará nuestro personal, para avalar que se acudió atender su solicitud.</p>
+                                    <p>2.- Cuando nuestro personal técnico acuda en la fecha y hora acordada para atender su solicitud y no se encuentre, se reprogramará en una segunda ocasión; en caso de ocurrir nuevamente la solicitud será cancelada y requerirá que nuevamente se presente la solicitud para el servicio de evaluación y  programación.</p>
+                                    <p>3.- Sólo serán evaluados y atendidos los conceptos capturados en la presente solicitud, en el caso de solicitar nuevos servicios se requerirá que usted realice una nueva solicitud.</p>
+                                    <p>4.- La empresa NO será responsable por el uso ó desgaste naturales, así como ningún daño accidental ó consciente de cualquier clase por negligencia, descuido, maltrato ó destrucciones por parte del propietario ó por terceros. En caso de reparación, en ningún caso incluirá trabajos adicionales a los amparados en la póliza.</p>
+                                </td>
+                            </tr>
+                            <tr><td>&nbsp;</td></tr>
+                            <tr><td>&nbsp;</td></tr>
+                        </table>
+                    
+                        <table cellspacing="0" cellpadding="0" style="width:95%;margin: 0 auto;font-family: Helvetica, sans-serif;font-size: 1vw;text-align: justify;">
+                            <tr><td style="width:100%; border-top:solid 1px #594F2B;" colspan="5">&nbsp;</td></tr>
+                            <tr>
+                                <td style="width:15%;">&nbsp;</td>
+                                <td style="width:30%; text-align:center;">
+                                    <input id="anterior" type="button" value="Anterior" onclick="irAnterior();" style="border-radius: 8px;font-size:1.3vw;width: 10vw;height: 3vw;background-color: #4285F4;color: #FFFFFF;"/>
+                                </td>
+                                <td style="width:10%;">&nbsp;</td>
+                                <td style="width:30%; text-align:center;">
+                                    <input id="enviar" type="button" value="Enviar" onclick="enviarCaso();" style="border-radius: 8px;font-size:1.3vw;width: 10vw;height: 3vw;background-color: #4285F4;color: #FFFFFF;"/>
+                                </td>
+                                <td style="width:15%;">&nbsp;</td>
+                            </tr>
+                            <tr><td>&nbsp;</td></tr>
+                        </table>
+                    
+                    </div>
+                    
+                </div>
+                
+            </apex:outputPanel>
+        </apex:outputPanel>
+        
+    </div>
+    
+    
+    <apex:actionFunction name="siguiente" action="{!enviarSiguiente}" reRender="OP_SeccionInicial,OP_SeccionSiguiente" oncomplete="irArriba();"/>   
+    <apex:actionFunction name="inicial" action="{!enviarInicial}" reRender="OP_SeccionInicial,OP_SeccionSiguiente" oncomplete="irArriba();"/>
+    <apex:actionFunction name="enviar" action="{!enviarCaso}"/>
+    
+    <apex:includeScript value="{!$Resource.validaciones_web}"/>
+    <script>
+        
+        //Funcion para validar que ambos correos ingresados sean iguales
+        function compruebaEmailIgual(){
+        
+            var email = document.getElementById('WebCaso:F_WebCaso:email');
+            var emailComprobacion = document.getElementById('WebCaso:F_WebCaso:emailComprobacion');
+            
+            if(emailComprobacion.value != '' && email.value != emailComprobacion.value){
+            
+                document.getElementById('etiquetaEmailComprobacion').style.background ='#FBEFEF';               
+                document.getElementById('subEtiquetaEmailComprobacion').style.background ='#FBEFEF';
+                document.getElementById('campoEmailComprobacion').style.background ='#FBEFEF';
+                document.getElementById('errorEmailComprobacionNoIguales').style.background ='#FBEFEF';
+                document.getElementById('errorEmailComprobacionNoIguales').style.display='block';
+            
+                etiquetaIr = 'etiquetaEmail';
+            
+                if (navigator.userAgent.match(/Chrome|AppleWebKit/)) { 
+                    window.location.href = '#' + etiquetaIr;
+                    window.location.href = '#' + etiquetaIr;
+                } else {
+                    window.location.hash = etiquetaIr;
+                }
+                return false;
+            }
+            else{
+            
+                document.getElementById('etiquetaEmailComprobacion').style.background ='#FFFFFF';
+                document.getElementById('subEtiquetaEmailComprobacion').style.background ='#FFFFFF';
+                document.getElementById('campoEmailComprobacion').style.background ='#FFFFFF';
+                document.getElementById('errorEmailComprobacionNoIguales').style.background ='#FFFFFF';
+                document.getElementById('errorEmailComprobacionNoIguales').style.display='none';
+            }
+        }
+        
+        //Funcion para validar que los datos ingresados sean los obligatorios y tipo de datos correcto
+        function validaDatos(){
+        
+            var errores = 0;
+            var etiquetaIr = '';
+            
+            var nombre = document.getElementById('WebCaso:F_WebCaso:nombre');
+            var numeroCliente = document.getElementById('WebCaso:F_WebCaso:numeroCliente');
+            var email = document.getElementById('WebCaso:F_WebCaso:email');
+            var emailComprobacion = document.getElementById('WebCaso:F_WebCaso:emailComprobacion');
+            var telefonoCasa = document.getElementById('WebCaso:F_WebCaso:telefonoCasa');
+            var telefonoOficina = document.getElementById('WebCaso:F_WebCaso:telefonoOficina');
+            var telefonoCelular = document.getElementById('WebCaso:F_WebCaso:telefonoCelular');
+            var metodoContactoPreferido = document.getElementById('WebCaso:F_WebCaso:metodoContactoPreferido');
+            /*var desarrollo = document.getElementById('WebCaso:F_WebCaso:desarrollo');
+            var casa = document.getElementById('WebCaso:F_WebCaso:casa');*/
+            
+            //errores += validaNoVacio(nombre);
+            if(validaNoVacio(nombre) > 0){
+                document.getElementById('etiquetaNombre').style.background ='#FBEFEF';
+                document.getElementById('campoNombre').style.background ='#FBEFEF';
+                document.getElementById('errorNombre').style.background ='#FBEFEF';
+                document.getElementById('errorNombre').style.display='block';
+                errores += 1;
+                
+                etiquetaIr = 'etiquetaNombre';
+            }
+            else{
+                document.getElementById('etiquetaNombre').style.background ='#FFFFFF';
+                document.getElementById('campoNombre').style.background ='#FFFFFF';
+                document.getElementById('errorNombre').style.background ='#FFFFFF';
+                document.getElementById('errorNombre').style.display='none';
+            }
+            
+            //errores += validaNoVacio(numeroCliente);
+            if(validaNoVacio(numeroCliente) > 0){
+                document.getElementById('etiquetaNumeroCliente').style.background ='#FBEFEF';
+                document.getElementById('campoNumeroCliente').style.background ='#FBEFEF';
+                document.getElementById('etiquetaInformacionNumeroCliente').style.background ='#FBEFEF';
+                document.getElementById('errorNumeroClienteVacio').style.background ='#FBEFEF';
+                document.getElementById('errorNumeroClienteVacio').style.display='block';
+                errores += 1;
+                
+                etiquetaIr = 'etiquetaNumeroCliente';
+            }
+            else{
+                document.getElementById('etiquetaNumeroCliente').style.background ='#FFFFFF';
+                document.getElementById('campoNumeroCliente').style.background ='#FFFFFF';
+                document.getElementById('etiquetaInformacionNumeroCliente').style.background ='#FFFFFF';
+                document.getElementById('errorNumeroClienteVacio').style.background ='#FFFFFF';
+                document.getElementById('errorNumeroClienteVacio').style.display='none';
+            }
+            
+            //errores += validaCorreo(email);
+            if(validaCorreo(email) > 0){
+                document.getElementById('etiquetaEmail').style.background ='#FBEFEF';
+                document.getElementById('campoEmail').style.background ='#FBEFEF';
+                document.getElementById('errorEmailVacio').style.background ='#FBEFEF';
+                document.getElementById('errorEmailVacio').style.display='block';
+                errores += 1;
+                
+                if(etiquetaIr == ''){
+                    etiquetaIr = 'etiquetaEmail';
+                }
+            }
+            else{
+                document.getElementById('etiquetaEmail').style.background ='#FFFFFF';
+                document.getElementById('campoEmail').style.background ='#FFFFFF';
+                document.getElementById('errorEmailVacio').style.background ='#FFFFFF';
+                document.getElementById('errorEmailVacio').style.display='none';
+            }
+            
+            //errores += validaCorreo(emailComprobacion);
+            if(validaCorreo(emailComprobacion) > 0){
+                document.getElementById('etiquetaEmailComprobacion').style.background ='#FBEFEF';               
+                document.getElementById('subEtiquetaEmailComprobacion').style.background ='#FBEFEF';
+                document.getElementById('campoEmailComprobacion').style.background ='#FBEFEF';
+                document.getElementById('errorEmailComprobacionVacio').style.background ='#FBEFEF';
+                document.getElementById('errorEmailComprobacionVacio').style.display='block';
+                errores += 1;
+                
+                if(etiquetaIr == ''){
+                    etiquetaIr = 'etiquetaEmailComprobacion';
+                }
+            }
+            else{
+                document.getElementById('etiquetaEmailComprobacion').style.background ='#FFFFFF';               
+                document.getElementById('subEtiquetaEmailComprobacion').style.background ='#FFFFFF';
+                document.getElementById('campoEmailComprobacion').style.background ='#FFFFFF';
+                document.getElementById('errorEmailComprobacionVacio').style.background ='#FFFFFF';
+                document.getElementById('errorEmailComprobacionVacio').style.display='none';
+                
+                if(email.value != emailComprobacion.value){
+            
+                    document.getElementById('etiquetaEmailComprobacion').style.background ='#FBEFEF';               
+                    document.getElementById('subEtiquetaEmailComprobacion').style.background ='#FBEFEF';
+                    document.getElementById('campoEmailComprobacion').style.background ='#FBEFEF';
+                    document.getElementById('errorEmailComprobacionNoIguales').style.background ='#FBEFEF';
+                    document.getElementById('errorEmailComprobacionNoIguales').style.display='block';
+                    errores += 1;
+                    
+                    if(etiquetaIr == ''){
+                        etiquetaIr = 'etiquetaEmail';
+                    }
+                }
+                else{
+                
+                    document.getElementById('etiquetaEmailComprobacion').style.background ='#FFFFFF';
+                    document.getElementById('subEtiquetaEmailComprobacion').style.background ='#FFFFFF';
+                    document.getElementById('campoEmailComprobacion').style.background ='#FFFFFF';
+                    document.getElementById('errorEmailComprobacionNoIguales').style.background ='#FFFFFF';
+                    document.getElementById('errorEmailComprobacionNoIguales').style.display='none';
+                }
+            }
+            
+            //errores += validaTelefono(telefonoCasa);
+            if(validaTelefono(telefonoCasa) > 0){
+                document.getElementById('etiquetaTelefonoCasa').style.background ='#FBEFEF';
+                document.getElementById('subEtiquetaTelefonoCasa').style.background ='#FBEFEF';
+                document.getElementById('campoTelefonoCasa').style.background ='#FBEFEF';
+                document.getElementById('errorTelefonoCasa').style.background ='#FBEFEF';
+                document.getElementById('errorTelefonoCasa').style.display='block';
+                errores += 1;
+                
+                if(etiquetaIr == ''){
+                    etiquetaIr = 'etiquetaTelefonoCasa';
+                }
+            }
+            else{
+                document.getElementById('etiquetaTelefonoCasa').style.background ='#FFFFFF';
+                document.getElementById('subEtiquetaTelefonoCasa').style.background ='#FFFFFF';
+                document.getElementById('campoTelefonoCasa').style.background ='#FFFFFF';
+                document.getElementById('errorTelefonoCasa').style.background ='#FFFFFF';
+                document.getElementById('errorTelefonoCasa').style.display='none';
+            }
+            
+            //errores += validaTelefono(telefonoOficina);
+            if(validaTelefono(telefonoOficina) > 0){
+                document.getElementById('etiquetaTelefonoOficina').style.background ='#FBEFEF';
+                document.getElementById('subEtiquetaTelefonoOficina').style.background ='#FBEFEF';
+                document.getElementById('campoTelefonoOficina').style.background ='#FBEFEF';
+                document.getElementById('errorTelefonoOficina').style.background ='#FBEFEF';
+                document.getElementById('errorTelefonoOficina').style.display='block';
+                errores += 1;
+                
+                if(etiquetaIr == ''){
+                    etiquetaIr = 'etiquetaTelefonoOficina';
+                }
+            }
+            else{
+                document.getElementById('etiquetaTelefonoOficina').style.background ='#FFFFFF';
+                document.getElementById('subEtiquetaTelefonoOficina').style.background ='#FFFFFF';
+                document.getElementById('campoTelefonoOficina').style.background ='#FFFFFF';
+                document.getElementById('errorTelefonoOficina').style.background ='#FFFFFF';
+                document.getElementById('errorTelefonoOficina').style.display='none';
+            }
+            
+            //errores += validaTelefono(telefonoCelular);
+            if(validaTelefono(telefonoCelular) > 0){
+                document.getElementById('etiquetaTelefonoCelular').style.background ='#FBEFEF';
+                document.getElementById('subEtiquetaTelefonoCelular').style.background ='#FBEFEF';
+                document.getElementById('campoTelefonoCelular').style.background ='#FBEFEF';
+                document.getElementById('errorTelefonoCelular').style.background ='#FBEFEF';
+                document.getElementById('errorTelefonoCelular').style.display='block';
+                errores += 1;
+                
+                if(etiquetaIr == ''){
+                    etiquetaIr = 'etiquetaTelefonoCelular';
+                }
+            }
+            else{
+                document.getElementById('etiquetaTelefonoCelular').style.background ='#FFFFFF';
+                document.getElementById('subEtiquetaTelefonoCelular').style.background ='#FFFFFF';
+                document.getElementById('campoTelefonoCelular').style.background ='#FFFFFF';
+                document.getElementById('errorTelefonoCelular').style.background ='#FFFFFF';
+                document.getElementById('errorTelefonoCelular').style.display='none';
+            }
+            
+            //errores += validaSeleccion(metodoContactoPreferido);
+            if(validaSeleccion(metodoContactoPreferido) > 0){
+                document.getElementById('etiquetaMetodoContactoPreferido').style.background ='#FBEFEF';
+                document.getElementById('campoMetodoContactoPreferido').style.background ='#FBEFEF';
+                document.getElementById('errorMetodoContactoPreferido').style.background ='#FBEFEF';
+                document.getElementById('errorMetodoContactoPreferido').style.display='block';
+                errores += 1;
+                
+                if(etiquetaIr == ''){
+                    etiquetaIr = 'etiquetaMetodoContactoPreferido';
+                }
+            }
+            else{
+                document.getElementById('etiquetaMetodoContactoPreferido').style.background ='#FFFFFF';
+                document.getElementById('campoMetodoContactoPreferido').style.background ='#FFFFFF';
+                document.getElementById('errorMetodoContactoPreferido').style.background ='#FFFFFF';
+                document.getElementById('errorMetodoContactoPreferido').style.display='none';
+            }
+            
+            //errores += validaSeleccion(desarrollo);
+            /*if(validaSeleccion(desarrollo) > 0){
+                document.getElementById('etiquetaDesarrollo').style.background ='#FBEFEF';
+                document.getElementById('campoDesarrollo').style.background ='#FBEFEF';
+                document.getElementById('errorDesarrollo').style.background ='#FBEFEF';
+                document.getElementById('errorDesarrollo').style.display='block';
+                errores += 1;
+                
+                if(etiquetaIr == ''){
+                    etiquetaIr = 'etiquetaDesarrollo';
+                }
+            }
+            else{
+                document.getElementById('etiquetaDesarrollo').style.background ='#FFFFFF';
+                document.getElementById('campoDesarrollo').style.background ='#FFFFFF';
+                document.getElementById('errorDesarrollo').style.background ='#FFFFFF';
+                document.getElementById('errorDesarrollo').style.display='none';
+            }*/
+            
+            //errores += validaSeleccion(casa);
+            /*if(validaSeleccion(casa) > 0){
+                document.getElementById('etiquetaCasa').style.background ='#FBEFEF';
+                document.getElementById('campoCasa').style.background ='#FBEFEF';
+                document.getElementById('errorCasa').style.background ='#FBEFEF';
+                document.getElementById('errorCasa').style.display='block';
+                errores += 1;
+                
+                if(etiquetaIr == ''){
+                    etiquetaIr = 'etiquetaCasa';
+                }
+            }
+            else{
+                document.getElementById('etiquetaCasa').style.background ='#FFFFFF';
+                document.getElementById('campoCasa').style.background ='#FFFFFF';
+                document.getElementById('errorCasa').style.background ='#FFFFFF';
+                document.getElementById('errorCasa').style.display='none';
+            }*/
+            
+            //errores += validaCategoriasReporte();
+            if(validaCategoriasReporte() > 0){
+                document.getElementById('etiquetaCategoriaReporte').style.background ='#FBEFEF';
+                document.getElementById('errorCategoriaReporte').style.background ='#FBEFEF';
+                document.getElementById('errorCategoriaReporte').style.display='block';
+                errores += 1;
+                
+                if(etiquetaIr == ''){
+                    etiquetaIr = 'etiquetaCategoriaReporte';
+                }
+            }
+            else{
+                document.getElementById('errorCategoriaReporte').style.background ='#FFFFFF';
+                document.getElementById('errorCategoriaReporte').style.display='none';
+            }
+            
+            if(errores>0){
+            
+                //alert('hay errores');             
+                if (navigator.userAgent.match(/Chrome|AppleWebKit/)) { 
+                    window.location.href = '#' + etiquetaIr;
+                    window.location.href = '#' + etiquetaIr;
+                } else {
+                    window.location.hash = etiquetaIr;
+                }
+                return false;
+            }
+            else{
+                //alert('todo bien');
+                siguiente();
+            }
+        }
+        
+        //Funcion para validar si se ha elegido o no alguna categoria de reporte
+        function validaCategoriasReporte(){
+        
+            var errores = 0;
+            
+            var acabados = document.getElementById('WebCaso:F_WebCaso:acabados');
+            var canceles = document.getElementById('WebCaso:F_WebCaso:canceles');
+            var carpinteria = document.getElementById('WebCaso:F_WebCaso:carpinteria');
+            var humedades = document.getElementById('WebCaso:F_WebCaso:humedades');
+            var instalacionesGas = document.getElementById('WebCaso:F_WebCaso:instalacionesGas');
+            var instalacionesElectricas = document.getElementById('WebCaso:F_WebCaso:instalacionesElectricas');
+            var instalacionesHidraulicas = document.getElementById('WebCaso:F_WebCaso:instalacionesHidraulicas');
+            var instalacionesSanitarias = document.getElementById('WebCaso:F_WebCaso:instalacionesSanitarias');
+            var instalacionesTvTelefonia = document.getElementById('WebCaso:F_WebCaso:instalacionesTvTelefonia');
+            var jardineria = document.getElementById('WebCaso:F_WebCaso:jardineria');
+            var puertaPrincipal = document.getElementById('WebCaso:F_WebCaso:puertaPrincipal');
+            
+            /*var acabadosExteriores = document.getElementById('WebCaso:F_WebCaso:acabadosExteriores');
+            var acabadosInteriores = document.getElementById('WebCaso:F_WebCaso:acabadosInteriores');
+            var carpinteria = document.getElementById('WebCaso:F_WebCaso:carpinteria');
+            var fisuras = document.getElementById('WebCaso:F_WebCaso:fisuras');
+            var humedadesDomos = document.getElementById('WebCaso:F_WebCaso:humedadesDomos');
+            var humedadesPuertasVentanas = document.getElementById('WebCaso:F_WebCaso:humedadesPuertasVentanas');
+            var humedadesTechosImpermeabilizante = document.getElementById('WebCaso:F_WebCaso:humedadesTechosImpermeabilizante');
+            var instalacionesGas = document.getElementById('WebCaso:F_WebCaso:instalacionesGas');
+            var instalacionesElectricas = document.getElementById('WebCaso:F_WebCaso:instalacionesElectricas');
+            var instalacionesHidraulicas = document.getElementById('WebCaso:F_WebCaso:instalacionesHidraulicas');
+            var instalacionesSanitarias = document.getElementById('WebCaso:F_WebCaso:instalacionesSanitarias');
+            var instalacionesTvTelefonia = document.getElementById('WebCaso:F_WebCaso:instalacionesTvTelefonia');
+            var jardineria = document.getElementById('WebCaso:F_WebCaso:jardineria');
+            var ventanasPuertasAluminio = document.getElementById('WebCaso:F_WebCaso:ventanasPuertasAluminio');*/
+            
+            errores += validaCheckbox(acabados);
+            errores += validaCheckbox(canceles);
+            errores += validaCheckbox(carpinteria);
+            errores += validaCheckbox(humedades);
+            errores += validaCheckbox(instalacionesGas);
+            errores += validaCheckbox(instalacionesElectricas);
+            errores += validaCheckbox(instalacionesHidraulicas);
+            errores += validaCheckbox(instalacionesSanitarias);
+            errores += validaCheckbox(instalacionesTvTelefonia);
+            errores += validaCheckbox(jardineria);
+            errores += validaCheckbox(puertaPrincipal);
+            
+            /*errores += validaCheckbox(acabadosExteriores);
+            errores += validaCheckbox(acabadosInteriores);
+            errores += validaCheckbox(carpinteria);
+            errores += validaCheckbox(fisuras);
+            errores += validaCheckbox(humedadesDomos);
+            errores += validaCheckbox(humedadesPuertasVentanas);
+            errores += validaCheckbox(humedadesTechosImpermeabilizante);
+            errores += validaCheckbox(instalacionesGas);
+            errores += validaCheckbox(instalacionesElectricas);
+            errores += validaCheckbox(instalacionesHidraulicas);
+            errores += validaCheckbox(instalacionesSanitarias);
+            errores += validaCheckbox(instalacionesTvTelefonia);
+            errores += validaCheckbox(jardineria);
+            errores += validaCheckbox(ventanasPuertasAluminio);*/
+            
+            if(errores >= 1){
+                return 0;
+            }
+            else{
+                return 1;
+            }
+        }
+        
+        //Funcion para ir la seccion inicial
+        function irAnterior(){
+            inicial();
+            return false;
+        }
+        
+        //Funcion para ir al top de la pagina
+        function irArriba(){
+        
+            window.scrollTo(0,0);
+        }
+        
+        //Funcion para guardar caso
+        function enviarCaso(){
+        
+            var errores = 0;
+            var etiquetaIr = '';
+        
+            /*var fechaHoraVisitasSugeridas = document.getElementById('WebCaso:F_WebCaso:fechaHoraVisitasSugeridas');
+            
+            if(validaNoVacio(fechaHoraVisitasSugeridas) > 0){
+                document.getElementById('etiquetaFechaHoraVisitasSugeridas').style.background ='#FBEFEF';
+                document.getElementById('subEtiquetaFechaHoraVisitasSugeridas').style.background ='#FBEFEF';
+                document.getElementById('campoFechaHoraVisitasSugeridas').style.background ='#FBEFEF';
+                document.getElementById('errorFechaHoraVisitasSugeridas').style.background ='#FBEFEF';
+                document.getElementById('errorFechaHoraVisitasSugeridas').style.display='block';
+                errores += 1;
+                
+                if(etiquetaIr == ''){
+                    etiquetaIr = 'etiquetaFechaHoraVisitasSugeridas';
+                }
+            }
+            else{
+                document.getElementById('etiquetaFechaHoraVisitasSugeridas').style.background ='#FFFFFF';
+                document.getElementById('subEtiquetaFechaHoraVisitasSugeridas').style.background ='#FFFFFF';
+                document.getElementById('campoFechaHoraVisitasSugeridas').style.background ='#FFFFFF';
+                document.getElementById('errorFechaHoraVisitasSugeridas').style.background ='#FFFFFF';
+                document.getElementById('errorFechaHoraVisitasSugeridas').style.display='none';
+            }*/
+            
+            if(errores>0){
+            
+                //alert('hay errores');             
+                if (navigator.userAgent.match(/Chrome|AppleWebKit/)) { 
+                    window.location.href = '#' + etiquetaIr;
+                    window.location.href = '#' + etiquetaIr;
+                } else {
+                    window.location.hash = etiquetaIr;
+                }
+                return false;
+            }
+            else{
+                //alert('todo bien');
+                enviar();
+            }
+        }
+        
+    </script>
+    
+</apex:form>
+</apex:page>
